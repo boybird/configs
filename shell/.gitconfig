@@ -1,7 +1,6 @@
 [user]
 	name = zxk7516
 	email = zxk7516@foxmail.com
-	signingkey = BC86115038EA36D52CA1FFF1B4288F5A4A34220B
 [ui "color"]
 	ui = always
 [color]
@@ -27,21 +26,10 @@
 	default = simple
 [help]
 	autocorrect = 1
-[url "git.launchpad.net"]
-	insteadOf = lp:
-[url "git@g.csail.mit.edu:"]
-	insteadOf = g:
 [url "git@github.com:"]
 	insteadOf = gh:
 [github]
-	user = jonhoo
+	user = boybird
 [diff]
 	algorithm = patience
 	compactionHeuristic = true
-[commit]
-	gpgsign = true
-[protocol]
-	version = 2
-[sendemail]
-	smtpserver = /usr/bin/msmtp
-	annotate = yes
