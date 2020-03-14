@@ -13,6 +13,8 @@
 	tool = nvim -d
 [alias]
 	c = commit
+	co = checkout
+	b = branch
 	s = status
 	st = status
 	lg = log --oneline
@@ -22,14 +24,3 @@
 	ss = "!f() { git stash show stash^{/$*} -p; }; f"
 	sa = "!f() { git stash apply stash^{/$*}; }; f"
 	sl = stash list
-[push]
-	default = simple
-[help]
-	autocorrect = 1
-[url "git@github.com:"]
-	insteadOf = gh:
-[github]
-	user = boybird
-[diff]
-	algorithm = patience
-	compactionHeuristic = true

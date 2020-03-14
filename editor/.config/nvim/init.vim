@@ -41,10 +41,11 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh', }
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
-let g:LanguageClient_serverCommands = { 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'], }
+let g:LanguageClient_serverCommands = { 'rust': ['~/.cargo/bin/rustup', 'run', 'nightly', 'rls'], }
 
 if has('nvim')
     set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
